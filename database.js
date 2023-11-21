@@ -14,3 +14,14 @@
 • Write path: memory cache; refer to cassendra
 • Read path: memory cache
  */
+let store = {};
+
+function push(key, value) {
+    store[key] = value;
+};
+
+function get(key) {
+    return store[key];
+};
+
+module.exports = {push, get};
